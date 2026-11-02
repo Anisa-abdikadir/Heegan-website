@@ -33,7 +33,7 @@ const Navbar = () => {
   return (
     <>
       {/* NAVBAR */}
-      <nav className="fixed top-4 left-1/2 z-40 w-[94%] max-w-7xl -translate-x-1/2 rounded-full bg-white px-4 py-3 shadow-lg sm:px-6">
+      <nav className="fixed top-4 left-1/2 z-40 w-[98%] max-w-7xl  -translate-x-1/2 rounded-full bg-white px-4 py-3 shadow-lg sm:px-6">
 
         <div className="flex items-center justify-between">
 
@@ -75,8 +75,10 @@ const Navbar = () => {
      {/* CONTACT BUTTON - DESKTOP ONLY */}
       <div className="hidden xl:block">
         <Buttons
+        size="sm"
           href="#contact"
-          className="rounded-full px-4 py-3 bg-[#32b0df] text-md font-semibold"
+
+          className="rounded-full bg-[#32b0df]  text-white font-bold"
         >
           Contact Us
         </Buttons>

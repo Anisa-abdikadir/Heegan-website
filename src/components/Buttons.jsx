@@ -14,24 +14,25 @@ const Buttons = ({
 }) => {
   // Button Colors
   const styles = {
-    primary:
-      "hover:border-2 hover:border-white  hover:text-white bg-[#32B0DF] hover:border-[#32B0DF]",
+  primary:
+    "bg-[#32B0DF] border-2 border-[#32B0DF] text-white hover:bg-transparent hover:border-white hover:text-white",
 
-    dark:
-      "border-2 border-white  hover:text-white hover:bg-[#32B0DF] hover:border-[#32B0DF]",
+  dark:
+    "border-2 border-white text-white hover:bg-[#32B0DF] hover:border-[#32B0DF]",
 
-    outline:
-      "border-2 border-[#32B0DF] text-[#32B0DF] hover:bg-[#32B0DF] hover:text-white",
+  outline:
+    "border-2 border-[#32B0DF] text-[#32B0DF] hover:bg-[#32B0DF] hover:text-white",
 
-    light:
-      "bg-white text-[#073568] hover:bg-gray-100 shadow-md",
+  light:
+    "bg-white text-[#073568] hover:bg-gray-100 shadow-md",
+
   };
 
   // Button Sizes
   const sizes = {
-    sm: "px-4 py-2 text-xs",
-    md: "px-8 py-3 text-sm",
-    lg: "px-18 py-3 text-base",
+    sm: "px-8 py-3 ",
+    md: "px-12 py-3 ",
+    lg: "px-24 py-3 ",
   };
 
   return (

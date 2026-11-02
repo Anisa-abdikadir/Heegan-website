@@ -4,8 +4,7 @@ import { assets } from "../assets/assets";
 import { FaStar } from "react-icons/fa";
 import VideoPing from "./videoPing";
 import Buttons from "../components/Buttons";
-import compnyNames from "./images"
-
+import CompnyNames from "./compnyNames";
 
 const Hero = () => {
   return (
@@ -22,7 +21,7 @@ const Hero = () => {
       {/* Overlay */}
       <div className="absolute inset-0 bg-[#073568]/35"></div>
 
-      <div className="flex gap-10  flex-col items-center justify-center px-4 py-1 md:flex-row md:py-10">
+      <div className="flex gap-10 mx-auto max-w-6xl  flex-col items-center justify-center  py-1 md:flex-row md:py-10">
           {/* Hero Content */}
      <div className="relative flex flex-col md:w-1/2 items-start justify-center gap-5 px-2 text-left">
 
@@ -75,8 +74,10 @@ const Hero = () => {
 
     
     </section>
-    <compnyNames />
-    </div>
+    
+  <div className="relative z-10 mt-auto">
+        <CompnyNames />
+      </div>    </div>
   );
 };
 
