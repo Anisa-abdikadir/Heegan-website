@@ -9,9 +9,13 @@ import {
   FiArrowUpRight,
   FiChevronLeft,
   FiChevronRight,
-  FiCloud,
-  FiMonitor,
+    FiLock,
+  
+  
 } from "react-icons/fi";
+import { RiRobot2Line } from "react-icons/ri";
+
+
 
 import Title from "../Services/Title";
 
@@ -21,44 +25,44 @@ const services = [
     title: "Software Development",
     desc: "Empowering your business with innovative software solutions tailored to meet your unique needs.",
     icon: FiCode,
-    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800",
+    image: "https://heegantechnology.com/assets/software-devolopment-BMTU-DnU.webp",
   },
   {
     title: "Responsive Web Design",
     desc: "Beautiful, responsive websites that engage your audience and drive results. Our web design team crafts digital experiences that stand out.",
     icon: FiGlobe,
-    image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=800",
+    image: "https://heegantechnology.com/assets/web-design-image-BpEqh6IE.webp",
   },
   {
     title: "Mobile App Development",
     desc: "Reach your customers on any device with custom mobile apps. We build intuitive, high-performance apps for iOS and Android.",
     icon: FiSmartphone,
-    image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800",
+    image: "https://heegantechnology.com/assets/mobile-app-image-CUrveGei.webp",
   },
   {
     title: "E-commerce Development",
     desc: "Grow your business online with robust e-commerce platforms. We create secure, user-friendly stores that convert visitors into customers.",
     icon: FiCreditCard,
-    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800",
+    image: "https://heegantechnology.com/assets/e-commerce-image-DgxvGOem.webp",
   },
   {
-    title: "Cloud Solutions",
-    desc: "Scalable cloud services that help businesses store, manage, and access their data securely from anywhere.",
-    icon: FiCloud,
-    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800",
+    title: "AI & Machine Learning",
+    desc: "Unlock insights and automation with AI solutions. Our team helps you leverage machine learning for smarter business decisions.",
+    icon: RiRobot2Line ,
+    image: "https://heegantechnology.com/assets/ai_bot-AC3BtHSt.webp",
   },
   {
-    title: "UI/UX Design",
-    desc: "Creating user-friendly digital experiences with modern interfaces, intuitive navigation, and attractive designs.",
-    icon: FiMonitor,
-    image: "https://images.unsplash.com/photo-1559028012-481c04fa702d?w=800",
+    title: "Cybersecurity Services",
+    desc: "Protect your data and systems with advanced cybersecurity services. We safeguard your business from threats and vulnerabilities.",
+    icon: FiLock ,
+    image: "https://heegantechnology.com/assets/cybersecurity-image-CJ0LeFQq.webp",
   },
 ];
 
 // Service Card Component
 function ServiceCard({ title, desc, icon: Icon, image }) {
   return (
-    <div className="group relative h-105 w-full overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition-shadow duration-300 hover:shadow-xl">
+    <div className="group relative h-110 w-full overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition-shadow duration-300 hover:shadow-xl">
 
       {/* Background Image */}
       <div className="absolute inset-x-0 bottom-0 h-44 transition-all duration-500 ease-in-out group-hover:top-0 group-hover:h-auto">
@@ -76,12 +80,12 @@ function ServiceCard({ title, desc, icon: Icon, image }) {
       <div className="relative z-10 flex h-full flex-col p-6 transition-colors duration-500">
 
         {/* Icon */}
-        <div className="flex h-12 w-12 items-center justify-center rounded-lg border border-gray-200 bg-white text-gray-600 transition-all duration-500 group-hover:border-white group-hover:bg-white group-hover:text-gray-900">
+        <div className="flex h-12 w-12 items-center justify-center rounded-lg border border-gray-200 bg-white text-[#32B0DF] transition-all duration-500  ">
           <Icon size={22} />
         </div>
 
         {/* Title */}
-        <h3 className="mt-5 text-lg font-semibold text-gray-900 transition-colors duration-500 group-hover:text-white">
+        <h3 className="mt-5 text-lg font-semibold text-black transition-colors duration-500 group-hover:text-white">
           {title}
         </h3>
 
@@ -91,14 +95,16 @@ function ServiceCard({ title, desc, icon: Icon, image }) {
         </p>
 
         {/* See More */}
-        <a
+       <div className="items-center mt-auto justify-center">
+         <a
           href="#"
-          className="mt-auto flex items-center gap-1 text-sm font-medium text-sky-500 transition-colors duration-300 group-hover:text-white"
+          className=" flex items-center gap-1 text-sm font-medium text-white transition-colors duration-300 group-hover:text-white"
         >
           See more
 
-          <FiArrowUpRight className="transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" />
+          <FiArrowUpRight className="transition-transform " />
         </a>
+       </div>
 
       </div>
     </div>
