@@ -31,7 +31,7 @@ const Navbar = () => {
   };
 
   return (
-    <>
+    <div>
       {/* NAVBAR */}
       <nav className="fixed top-4 left-1/2 z-40 w-[98%] max-w-7xl  -translate-x-1/2 rounded-full bg-white px-4 py-3 shadow-lg sm:px-6">
 
@@ -84,14 +84,15 @@ const Navbar = () => {
         </Buttons>
       </div>
 
-          {/* MOBILE & TABLET MENU */}
+         <div>
+           {/* MOBILE & TABLET MENU */}
           <Buttons
-            variant="dark"
             onClick={() => setMenuOpen(true)}
             icon={<FiMenu />}
             ariaLabel="Open menu"
-            className="h-10 w-10 rounded-full text-xl xl:hidden"
+            className="  hover:bg--400  text-gray-500 text-xl xl:hidden"
           />
+         </div>
 
         </div>
       </nav>
@@ -139,7 +140,7 @@ const Navbar = () => {
             onClick={() => setMenuOpen(false)}
             icon={<FiX />}
             ariaLabel="Close menu"
-            className="h-9 w-9 shrink-0 text-white rounded-md text-xl"
+            className=" shrink-0 hover:bg-amber-800 text-white text-xl"
           />
 
 </div>
@@ -188,7 +189,7 @@ const Navbar = () => {
        
 
       </div>
-    </>
+    </div>
   );
 };
 

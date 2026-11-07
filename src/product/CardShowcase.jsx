@@ -71,7 +71,7 @@ function ShapeBadge({ src, icon: Icon, title, bgColor, svgClass }) {
     <div className="relative flex h-34 w-36  flex-col items-center justify-center">
       <svg
         viewBox="0 0 300 260"
-        className="absolute inset-0 h-full w-full drop-shadow-xl"
+        className="absolute inset-0 h-full w-full  drop-shadow-xl"
         preserveAspectRatio="none"
       >
         <path
@@ -80,7 +80,7 @@ function ShapeBadge({ src, icon: Icon, title, bgColor, svgClass }) {
         />
       </svg>
 
-      <div className="relative z-10 flex flex-col items-center justify-center">
+      <div className="relative z-10 flex flex-col  items-center justify-center">
         {Icon ? (
           <div
             className={`${svgClass} mb-3 flex items-center justify-center`}
@@ -191,7 +191,7 @@ export default function CardShowcase() {
       />
     </div>
 
-        <div className="mt-2 grid grid-cols-1 gap-6 max-w-7xl mx-auto sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-2 grid grid-cols-1  gap-6 max-w-7xl mx-auto sm:grid-cols-2 lg:grid-cols-3">
           {PRODUCTS.map((p) => (
             <ProductCard
               key={p.title}

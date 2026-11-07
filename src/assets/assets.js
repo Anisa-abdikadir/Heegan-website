@@ -33,6 +33,9 @@ import Ultimate from '../assets/imagesLoop/ultimate.png'
 import vilage from '../assets/imagesLoop/vilage.png'
 import wasarad from '../assets/imagesLoop/wasarada.png'
 import whistle from '../assets/imagesLoop/whist.png'
+import shape_img from '../assets/shape_img.jpg'
+import laptop from '../assets/laptoH.png'
+import Hero from '../assets/all_HeroImg.png'
 
 
 export const assets = {
@@ -71,6 +74,9 @@ export const assets = {
     vilage,
     wasarad,
     whistle,
+    shape_img,
+    laptop,
+    Hero,
 
 
 }
