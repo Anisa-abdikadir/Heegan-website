@@ -8,7 +8,7 @@ import {
   FaLinkedinIn,
   FaXTwitter,
 } from "react-icons/fa6";
-import { assets } from "../assets/assets"; // path-ka u beddel meesha assets ku jiro
+import { assets } from "../assets/assets"; 
 
 const companyLinks = ["About Us", "Products", "Services", "Industries", "Our Clients", "Case Studies"];
 
@@ -68,13 +68,13 @@ function LinkColumn({ title, links }) {
 
 export default function Footer() {
   return (
-    <footer className="font-sans text-[#434153]">
+    <footer className="font-sm text-[#434153]">
       {/* Qaybta sare: wave cad iyo gradient buluug ah */}
-      <div className="relative bg-linear-to-b from-[#58C2EE] via-[#9ddcf4]  overflow-hidden to-white sm:pt-68 pt-24">
+      <div className="relative bg-linear-to-b from-[#58C2EE] via-[#62C4EF]  overflow-hidden to-white sm:px-10 sm:pt-68 pt-24">
         <svg
           viewBox="0 0 1440 180"
           preserveAspectRatio="none"
-          className="absolute left-0 top-0 h-30 w-full sm:h-98 md:h-69"
+          className="absolute left-0 top-0 h-30 w-full sm:h-98 md:h-39"
         >
  <path
       d="M0 0 H1440 V38 C1120 85 900 145 720 145 C500 145 260 85 0 38 Z"
@@ -82,7 +82,7 @@ export default function Footer() {
     />        </svg>
 
         {/* CTA */}
-        <div className="relative px-6 pb-16 text-center">
+        <div className="relative -mt-20  text-center">
           <h2 className="text-3xl font-bold text-[#0f2440] sm:text-4xl">Get Started Today!</h2>
 
           <p className="mx-auto mt-4 max-w-md text-sm leading-6 text-[#0f2440]/80">
@@ -133,7 +133,7 @@ export default function Footer() {
       </div>
 
       {/* Language */}
-      <div className="border-b border-gray-200 max-w-6xl mx-auto bg-white px-6 py-2 sm:px-12 lg:px-16">
+      <div className="border-b border-gray-200 max-w-6xl mx-auto bg-white px-6 py-2 sm:px-12 lg:px-1">
         <button className="flex items-center gap-2 text-xs text-[#434153] transition-colors hover:text-[#35b9eb]">
           <FaGlobe className="text-sm" />
           US (English)
@@ -146,8 +146,8 @@ export default function Footer() {
           {/* Logo + trademark */}
           <div>
             <img src={assets.Logo} alt="Heegan Technology" className="h-12 w-auto object-contain" />
-            <p className="mt-4 max-w-xs text-[11px] leading-5 text-[#434153]">
-              The trademarks HEEGAN TECHNOLOGY COMPANY® are registered in Somalia. Patent & Trademark Office to
+            <p className="mt-4 max-w-lg text-[10px]  text-[#434153]">
+              The trademarks HEEGAN TECHNOLOGY COMPANY® are registered in Somalia. <br /> Patent & Trademark Office to
               Heegan Technology, Inc.
             </p>
           </div>
@@ -181,7 +181,7 @@ export default function Footer() {
                   key={name}
                   href={href}
                   aria-label={name}
-                  className="flex h-8 w-8 items-center justify-center rounded-full border border-[#0f2440] text-[#0f2440] transition-all duration-300 hover:border-[#35b9eb] hover:bg-[#35b9eb] hover:text-white"
+                  className="flex h-8 w-8 items-center justify-center rounded-full border border-[#35B9EB] text-[#35B9EB] transition-all duration-300 hover:border-[#35b9eb] hover:bg-[#35b9eb] hover:text-white"
                 >
                   <Icon className="text-xs" />
                 </a>
@@ -193,7 +193,7 @@ export default function Footer() {
 
       {/* Copyright + legal links */}
       <div className="bg-white px-6 sm:px-12 lg:px-16">
-        <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-3 border-t border-gray-200 py-4 text-[11px] sm:flex-row">
+        <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-3 border-t border-b border-gray-200 py-4 text-[11px] sm:flex-row">
           <p>© {new Date().getFullYear()} Heegan Technology. All rights reserved.</p>
           <ul className="flex flex-wrap items-center gap-2">
             {legalLinks.map((link, i) => (

@@ -1,5 +1,4 @@
 import React from "react";
-import { FiArrowUpRight } from "react-icons/fi";
 
 const Buttons = ({
   children,
@@ -11,28 +10,38 @@ const Buttons = ({
   className = "",
   iconsClassName = "",
   disabled = false,
+  buttonColor,
 }) => {
-  // Button Colors
   const styles = {
-  primary:
+      primary:
     "bg-[#32B0DF] border-2 border-[#32B0DF] text-white hover:bg-transparent hover:border-white hover:text-white",
 
   dark:
     "border-2 border-white text-white hover:bg-[#32B0DF] hover:border-[#32B0DF]",
 
-  outline:
-    "border-2 border-[#32B0DF] text-[#32B0DF] hover:bg-[#32B0DF] hover:text-white",
+  OrangeBg:
+    " bg-[#f59e0b] text-white hover:bg-[#32B0DF] hover:text-white",
 
-  light:
-    "bg-white text-[#073568] hover:bg-gray-100 shadow-md",
+  blueBg:
+    "bg-[#32B0DF] text-white hover:bg-[#229ED1] ",
 
+  green:
+    "bg-[#0AA51A] hover:bg-[#08c91b] text-white",
+
+   dhadhan:
+      "bg-[#F97316] hover:bg-[#ff6600] text-white" ,
+
+  eCaafi:
+      "bg-[#95CE85] hover:bg-[#6dce50] text-white",
+
+  red:
+    "bg-[#ED2024] hover:bg-[#ea6062] text-white"
   };
 
-  // Button Sizes
   const sizes = {
-    sm: "px-8 py-3 ",
-    md: "px-12 py-3 ",
-    lg: "px-24 py-3 ",
+    sm: "px-8 py-3",
+    md: "px-12 py-3",
+    lg: "px-24 py-3",
   };
 
   return (
@@ -40,6 +49,14 @@ const Buttons = ({
       type={type}
       onClick={onClick}
       disabled={disabled}
+      style={
+        variant === "primary"
+          ? {
+              backgroundColor: buttonColor || "#32B0DF",
+              borderColor: buttonColor || "#32B0DF",
+            }
+          : {}
+      }
       className={`
         inline-flex items-center justify-center gap-2
         rounded-full font-semibold
@@ -54,7 +71,7 @@ const Buttons = ({
       {children}
 
       {icon && (
-        <span className={`transition-transform duration-300 group-hover:translate-x-1 ${iconsClassName}`}>
+        <span className={iconsClassName}>
           {icon}
         </span>
       )}

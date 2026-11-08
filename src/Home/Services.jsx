@@ -17,7 +17,7 @@ import { RiRobot2Line } from "react-icons/ri";
 
 
 
-import Title from "../Services/Title";
+import SectionHeader from "../components/SectionHeader";
 
 // Services Data - 6 Cards Only
 const services = [
@@ -140,12 +140,18 @@ export default function ServiceCards() {
   return (
     <section className="bg-white px-6">
 
+      
+
       <div className="mx-auto max-w-6xl">
 
         {/* Header */}
         <div className="mb-10 text-center">
-          <Title />
-        </div>
+        <SectionHeader
+        badge="Our Services"
+        title="Transforming Ideas into Reality"
+        description="Heegan Technology provides advanced, industry-specific platforms designed to improve efficiency, automate workflows, and drive business success."
+      />        
+      </div>
 
         {/* Service Cards */}
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">

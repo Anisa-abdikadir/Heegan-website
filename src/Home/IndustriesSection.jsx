@@ -16,7 +16,6 @@ import {
 import { FaArrowRightLong } from "react-icons/fa6";
 import SectionHeader from '../components/SectionHeader';
 
-// React Icons
 const Icons = {
   Bank: FaUniversity,
   Medical: FaHospital,

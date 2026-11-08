@@ -13,7 +13,7 @@ const projects = [
     title: "SOMECO ERP System",
     desc: "SOMECO ERP System is a centralized business management platform designed to help SOMECO manage its daily operations from one place. The system brings together key areas such as customers, orders, payments, expenses, HR.",
     tags: ["Payroll Accounting", "Expense Management", "Attendance Human Resources"],
-    image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1000", // beddel sawirkaaga
+    image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1000", 
   },
   {
     id: 2,
@@ -120,7 +120,7 @@ function ProjectCard({ project }) {
   );
 }
 
-export default function ProjectsSection() {
+export default function Success() {
   const featured = projects.find((p) => p.featured);
   const others = projects.filter((p) => !p.featured);
 

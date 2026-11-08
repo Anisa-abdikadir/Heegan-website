@@ -9,8 +9,7 @@ const VideoPing = () => {
 
   return (
     <>
-      {/* Main Circle */}
-     {/* Main Circle */}
+      
 
 {/* Main Circle */}
 <div className="flex items-center justify-center bg-amber-900 ">

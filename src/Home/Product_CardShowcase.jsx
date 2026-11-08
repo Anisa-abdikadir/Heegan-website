@@ -8,7 +8,6 @@ import propertyIcon from "../assets/property.png";
 import shidaalIcon from "../assets/shidaal.png";
 import SectionHeader from "../components/SectionHeader";
 
-// --- Data Array ---
 const PRODUCTS = [
   {
     title: "eDhis Construction ERP",

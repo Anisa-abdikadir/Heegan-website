@@ -18,6 +18,7 @@ import businessIcon from "../assets/business.png";
 import healthIcon from "../assets/health.png";
 import propertyIcon from "../assets/property.png";
 import shidaalIcon from "../assets/shidaal.png";
+import { assets } from "../assets/assets";
 
 // Adeegyada ku dhinaca ah. side = "left" (magaca icon-ka ka dambeeya) ama "right" (magaca icon-ka ka hore)
 const services = [
@@ -87,7 +88,7 @@ function ShapeBadge({ icon: Icon, title, bgColor, className = "" }) {
         preserveAspectRatio="none"
       >
         <path
-          d="M 75 20 Q 150 35 225 20 Q 245 25 255 45 L 290 200 Q 300 230 260 240 Q 150 255 40 240 Q 0 230 10 200 L 45 45 Q 55 25 75 20 Z"
+          d="M 75 20 Q 150 35 225 20 Q 245 25 255 45 L 290 200 Q 300 230 260 240 Q 150 255 40 240 Q 0 230 10 200 L 45 45 Q 55 25 75 20 "
           fill={bgColor}
         />
       </svg>
@@ -121,57 +122,14 @@ function PhoneMockup() {
   const dashboardIcons = [FaChartLine, FaWallet, FaCartShopping, FaUsers];
 
   return (
-    <div className="absolute left-1/2 top-[3%] z-40 h-36 w-15.5 -translate-x-1/2 rounded-[11px] border-[3px] border-[#252b35] bg-white p-[3px] shadow-lg sm:h-40 sm:w-[70px]">
-      <div className="h-full overflow-hidden rounded-[7px] bg-[#f8fbfd] px-1">
-        <div className="flex items-center justify-between text-[5px] font-bold sm:text-[6px]">
-          <span className="text-[#1687a7]">●</span>
-          <span>9:30</span>
-          <span>● ●</span>
-        </div>
-
-        <div className="mt-2 flex items-center justify-between">
-          <span className="text-[6px] font-bold text-slate-800">Dashboard</span>
-          <span className="text-[5px] text-slate-400">•••</span>
-        </div>
-
-        <div className="mt-2 grid grid-cols-2 gap-1">
-          {dashboardItems.map(([number, label]) => (
-            <div key={label} className="rounded-sm bg-white p-1 shadow-sm">
-              <div className="text-[7px] font-bold text-[#28a9d5]">{number}</div>
-              <div className="text-[4px] text-gray-400">{label}</div>
-            </div>
-          ))}
-        </div>
-
-        <div className="mt-2 flex justify-between">
-          {dashboardIcons.map((Icon, index) => (
-            <div
-              key={index}
-              className="flex h-3 w-3 items-center justify-center rounded-sm bg-sky-400 text-white"
-            >
-              <Icon className="text-[6px]" />
-            </div>
-          ))}
-        </div>
-
-        <div className="mt-2 rounded-sm bg-white p-1">
-          <p className="text-[5px] font-bold text-gray-600">Statistics</p>
-          <svg viewBox="0 0 100 35" className="mt-1 w-full">
-            <path
-              d="M0 29 L12 20 L25 25 L38 8 L50 19 L65 10 L78 18 L90 4 L100 9"
-              fill="none"
-              stroke="#38bdf8"
-              strokeWidth="2"
-            />
-            <path
-              d="M0 29 L12 20 L25 25 L38 8 L50 19 L65 10 L78 18 L90 4 L100 9 L100 35 L0 35Z"
-              fill="#38bdf8"
-              opacity=".12"
-            />
-          </svg>
-        </div>
-      </div>
+        <div className="absolute left-1/2 top-[8%] z-30 h-64 w-36 -translate-x-1/2 -rotate-2 sm:top-[2%] sm:h-80 sm:w-44">
+      <img
+        src={assets.phne}
+        alt="Heegan Mobile Platform"
+        className="h-full w-full scale-125 object-contain drop-shadow-2xl"
+      />
     </div>
+
   );
 }
 
@@ -182,7 +140,7 @@ function Service({ service }) {
 
   return (
     <div
-      className={`absolute z-40 flex items-center gap-1.5 text-[9px]   leading-tight text-[#167b92] sm:gap-2 sm:text-xs ${service.position}`}
+      className={`absolute  flex items-center gap-1.5 text-[9px]   leading-tight text-[#167b92] sm:gap-2 sm:text-xs ${service.position}`}
     >
       {!isLeft && (
         <span className="max-w-21.25 text-left font-medium sm:max-w-none">{service.name}</span>
@@ -235,7 +193,7 @@ export default function HeeganPlatforms() {
         </div>
 
         {/* Property Management: icon hoose, magaca hoos ka yaal (z-30) */}
-        <div className="absolute left-1/2 top-[89%] z-30 flex -translate-x-1/2  mt-3 -translate-y-1/2 flex-col items-center gap-1 text-[#167b92]">
+        <div className="absolute left-1/2 top-[89%]  flex -translate-x-1/2  mt-3 -translate-y-1/2 flex-col items-center gap-1 text-[#167b92]">
           <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#1B6E84] text-white shadow-md sm:h-15 sm:w-15">
             <FaHouse className="text-base sm:text-lg" />
           </div>

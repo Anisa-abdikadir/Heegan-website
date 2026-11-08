@@ -1,16 +1,13 @@
 import React from "react";
-import { assets } from "../assets/assets";
+import { assets } from "../assets/ImgLoop";
 
 const CompnyNames = () => {
-  // Soo qaado dhammaan company images-ka
   const images = Object.entries(assets).filter(
     ([name]) => name !== "main"
   );
 
   return (
     <section className="relative  w-full overflow-hidden bg-white/10 mx-auto max-w-6xl  ">
-
-     
 
       {/* Infinite Logo Slider */}
       <div className="group flex w-full overflow-hidden">

@@ -1,27 +1,22 @@
 
 import React from "react";
 import AllPagesHero from "../components/AllPagesHero";
+import { assets } from "../assets/assets";
 
 const Hero = () => {
   return (
-    <>
+    <div>
       <AllPagesHero
-        badge="Who We Are"
-        title={
-          <>
-            Driven by Innovation.
-            <br />
-            Built on Trust.
-          </>
-        }
+        // badge="Smart Technology for Every Industry"
+        title="Driven by Innovation. Built on Trust."
         description="Learn more about who we are, our mission, and the vision that inspires us to create technology solutions that matter."
-        primaryText="Our Mission"
-        primaryLink="/about/mission"
+        primaryText="About Us"
+        primaryLink="/about"
         secondaryText="Contact Us"
         secondaryLink="/contact"
-        backgroundImage="/images/hero-bg.png"
+        backgroundImage={assets.Hero}
       />
-    </>
+    </div>
   );
 };
 

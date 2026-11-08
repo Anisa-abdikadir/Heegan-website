@@ -1,28 +1,34 @@
-import React from 'react'
-import Navbar from './components/Navbar'
-import Home from './pages/Home'
-import IndustriesSection from './pages/industries '
-import Services from './pages/Services'
-import ProjectsSection from './Succes/Success'
-import TrustedCollaborations from './Trusted/TrustedCollaborations'
-import PlatformDiagram from './pages/HeeganPlatform'
-import Footer from './components/PlatformFooter'
+
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+
+import Navbar from "./components/Navbar";
+import Footer from "./components/PlatformFooter";
+
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Products from "./pages/Products";
+import Our_Clients from './pages/Our_Clients'
 
 const App = () => {
   return (
-    <div>
-      <div>
-        <Navbar/>
-        <Home/>
-        <IndustriesSection />
-        <Services/>
-        <ProjectsSection/>
-        <TrustedCollaborations/>
-        <PlatformDiagram/>
-        <Footer/>
-      </div>
-    </div>
-  )
-}
+    <>
+      <Navbar />
 
-export default App
+      <Routes>
+        <Route path="/" element={<Home />} />
+
+        <Route path="/about" element={<About />} />
+                <Route path="/products" element={<Products />} />
+                <Route path="/Our_Clients" element={<Our_Clients />} />
+                {/* <Route path="/products" element={<Products />} /> */}
+
+
+      </Routes>
+
+      <Footer />
+    </>
+  );
+};
+
+export default App;

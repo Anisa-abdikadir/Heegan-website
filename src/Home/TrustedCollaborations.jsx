@@ -3,7 +3,6 @@ import React from "react";
 import SectionHeader from "../components/SectionHeader";
 import { assets } from "../assets/assets";
 
-// Partner Logos
 const logos = [
   { id: 1, src: assets.raqay, alt: "Raqay" },
   { id: 2, src: assets.vilage, alt: "The Village" },
