@@ -125,7 +125,7 @@ export default function Success() {
   const others = projects.filter((p) => !p.featured);
 
   return (
-    <section className="bg-white px-6 py-16">
+    <section className="bg-white px-6 py-10">
         <section className="">
       <SectionHeader
         badge="Our Services"

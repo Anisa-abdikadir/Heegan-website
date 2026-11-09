@@ -20,7 +20,6 @@ import propertyIcon from "../assets/property.png";
 import shidaalIcon from "../assets/shidaal.png";
 import { assets } from "../assets/assets";
 
-// Adeegyada ku dhinaca ah. side = "left" (magaca icon-ka ka dambeeya) ama "right" (magaca icon-ka ka hore)
 const services = [
   { name: "ERP", icon: HiOutlineComputerDesktop, side: "right", position: "right-[29%] top-[35%] sm:left-[15%] sm:top-[37%]" },
   { name: "HR Management", icon: FiUsers, side: "left", position: "right-[1%] top-[35%] sm:right-[7%] sm:top-[37%]" },
@@ -143,7 +142,7 @@ function Service({ service }) {
       {!isLeft && (
         <span className="max-w-21.25 text-left font-medium sm:max-w-none">{service.name}</span>
       )}
-      <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#1B6E84] text-white shadow-sm sm:h-15 sm:w-15">
+      <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#1B6E84] text-white shadow-sm sm:h-15 sm:w-15">
         <Icon className="text-[12px] sm:text-2xl" />
       </div>
       {isLeft && (
@@ -192,7 +191,7 @@ export default function HeeganPlatforms() {
 
         {/* Property Management: icon hoose, magaca hoos ka yaal (z-30) */}
         <div className="absolute left-1/2 top-[89%]  flex -translate-x-1/2  mt-3 -translate-y-1/2 flex-col items-center gap-1 text-[#167b92]">
-          <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#1B6E84] text-white shadow-md sm:h-15 sm:w-15">
+          <div className="flex h-6 w-6 items-center justify-center rounded-full bg-[#1B6E84] text-white shadow-md sm:h-15 sm:w-15">
             <BsHouse  className="text-base sm:text-lg" />
           </div>
           <span className="whitespace-nowrap text-[9px] font-medium sm:text-xs">Property Management</span>

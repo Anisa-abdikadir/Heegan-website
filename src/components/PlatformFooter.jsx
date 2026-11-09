@@ -67,11 +67,11 @@ const legalLinks = ["Disclaimer", "Privacy", "Terms & Conditions"];
 function LinkColumn({ title, links }) {
   return (
     <div className="min-w-0">
-      <h4 className="text-xs font-bold uppercase tracking-wider text-[#0f2440]">
+      <h4 className="text-sm font-bold    text-[#0f2440]">
         {title}
       </h4>
 
-      <ul className="mt-4 space-y-2">
+      <ul className="mt-4 space-y-1">
         {links.map((link) => (
           <li key={link}>
             <a
@@ -128,7 +128,7 @@ export default function Footer() {
       {/* FOOTER LINKS + CONTACT */}
       <div className="bg-white px-5 pb-10 pt-8 sm:px-8 sm:pt-10 lg:px-12">
 
-        <div className="mx-auto grid max-w-6xl grid-cols-2 gap-x-5 gap-y-9 sm:grid-cols-3 sm:gap-x-8 lg:grid-cols-5 lg:gap-">
+        <div className="mx-auto grid  max-w-6xl grid-cols-2  gap sm:grid-cols-3 sm:gap-x-8 lg:grid-cols-5 lg:gap-2">
 
           {columns.map((col) => (
             <LinkColumn

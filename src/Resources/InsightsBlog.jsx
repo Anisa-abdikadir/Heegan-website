@@ -153,7 +153,7 @@ const InsightsBlog = () => {
       {/* CONTENT - LEFT & RIGHT */}
     <div className="mt-10 grid grid-cols-1 items-start gap-4 lg:grid-cols-[minmax(0,1fr)_280px] lg:gap-3">
         {/* LEFT - BLOG CARDS */}
-        <div className="grid min-w-0  grid-cols-1 gap-3 lg:grid-cols-1">
+        <div className="grid min-w-0 grid-cols-1 gap-3 lg:grid-cols-1">
           {filteredPosts.length > 0 ? (
             filteredPosts.map((post) => (
               <PostCard key={post.id} post={post} />

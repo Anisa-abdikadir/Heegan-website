@@ -58,6 +58,7 @@ import wasarad from '../assets/imagesLoop/wasarada.png'
 import whistle from '../assets/imagesLoop/whist.png'
 import doctor from '../assets/doctor.jpg'
 import services from'../assets/sevices.jpg'
+import jowhara_apartment from '../assets/jowhara_apartment.jpg'
 
 
 export const assets = {
@@ -123,6 +124,7 @@ export const assets = {
     whistle,
     doctor,
     services,
+    jowhara_apartment,
 
 
 
