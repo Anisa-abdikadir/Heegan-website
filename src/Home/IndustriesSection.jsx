@@ -1,31 +1,30 @@
-
 import React from 'react';
 
 import {
-  FaUniversity,
-  FaHospital,
-  FaBuilding,
-  FaGraduationCap,
-  FaShoppingCart,
-  FaHardHat,
-  FaLeaf,
-  FaPlane,
-  FaArrowLeft
-} from 'react-icons/fa';
+  FiDollarSign,
+  FiHeart,
+  FiHome,
+  FiBookOpen,
+  FiShoppingCart,
+  FiTool,
+  FiFeather,
+  FiSend,
+  FiArrowLeft,
+  FiArrowRight
+} from 'react-icons/fi';
 
-import { FaArrowRightLong } from "react-icons/fa6";
 import SectionHeader from '../components/SectionHeader';
 
 const Icons = {
-  Bank: FaUniversity,
-  Medical: FaHospital,
-  Building: FaBuilding,
-  Education: FaGraduationCap,
-  Cart: FaShoppingCart,
-  HardHat: FaHardHat,
-  Leaf: FaLeaf,
-  Plane: FaPlane,
-  ArrowLeft: FaArrowLeft
+  Bank: FiDollarSign,
+  Medical: FiHeart,
+  Building: FiHome,
+  Education: FiBookOpen,
+  Cart: FiShoppingCart,
+  HardHat: FiTool,
+  Leaf: FiFeather,
+  Plane: FiSend,
+  ArrowLeft: FiArrowLeft
 };
 
 // Industries Data
@@ -182,7 +181,7 @@ export default function IndustriesSection() {
                   </span>
 
                   {/* Arrow */}
-                  <FaArrowRightLong
+                 <FiArrowRight
                     className="w-4 h-4 opacity-0 translate-x-2 group-hover/learn:opacity-100 group-hover/learn:translate-x-0 transition-all duration-300"
                   />
                 </div>
@@ -199,8 +198,11 @@ export default function IndustriesSection() {
                     }
                   `}
                 >
-                  <IconComponent className="w-5 h-5" />
-                </div>
+                  <IconComponent
+                    className="w-5 h-5"
+                    strokeWidth={1.5}
+                  />                
+                  </div>
 
               </div>
             </div>
@@ -217,8 +219,12 @@ export default function IndustriesSection() {
         >
           Discover More Industries
 
-          <FaArrowLeft className="w-2 h-4 rotate-180 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300" />
+        <FiArrowLeft
+          className="w-4 h-4 rotate-180 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300"
+          strokeWidth={1.5}
+        />    
         </a>
+      
       </div>
 
     </section>

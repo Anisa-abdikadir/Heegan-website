@@ -51,7 +51,7 @@ const Beeco = () => {
                        {/* Play Button */}
                        <button
                            aria-label="Play video"
-                           className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white text-[#32B0DF] shadow-lg transition hover:scale-110 sm:h-14 sm:w-14"
+                           className="relative z-10 flex cursor-pointer h-12 w-12 items-center justify-center rounded-full bg-white text-[#32B0DF] shadow-lg transition hover:scale-110 sm:h-14 sm:w-14"
                        >
                            <FaPlay className="ml-1 text-sm" />
                        </button>

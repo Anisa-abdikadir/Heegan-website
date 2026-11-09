@@ -1,31 +1,33 @@
-import {
-  FaLightbulb,
-  FaUsers,
-  FaHandshake,
-  FaAward,
-  FaCheck,
-} from "react-icons/fa6";
+import {FaCheck} from "react-icons/fa6";
+import { GoLightBulb } from "react-icons/go";
+import { LuUsers } from "react-icons/lu";
+import { LuHandshake } from "react-icons/lu";
+import { TbAward } from "react-icons/tb";
+
+
+
+
 
 const values = [
   {
     title: "Innovation",
     text: "We use new ideas and modern tech to create better solutions.",
-    icon: FaLightbulb,
+    icon: GoLightBulb,
   },
   {
     title: "Customer Focus",
     text: "We put client needs first to deliver real business value.",
-    icon: FaUsers,
+    icon: LuUsers,
   },
   {
     title: "Integrity",
     text: "We work honestly and responsibly in every project we handle.",
-    icon: FaHandshake,
+    icon: LuHandshake,
   },
   {
     title: "Excellence",
     text: "We aim for high quality and always improve our work.",
-    icon: FaAward,
+    icon: TbAward,
   },
 ];
 

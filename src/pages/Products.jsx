@@ -7,6 +7,7 @@ import Dhadhan from '../Products/Dhadhan'
 import Ecaafi from '../Products/Ecaafi'
 import E_Shidaal from '../Products/E_Shidaal'
 import WhyChooseSection from '../Products/WhyChooseSection'
+import HeeganPlatform from '../components/HeeganPlatform'
 const Products = () => {
   return (
     <div>
@@ -18,6 +19,7 @@ const Products = () => {
       <Ecaafi/>
       <E_Shidaal/>
       <WhyChooseSection/>
+      <HeeganPlatform/>
 
       
     </div>

@@ -22,7 +22,7 @@ const VideoPing = () => {
       <button
         onClick={() => setShowVideo(true)}
         aria-label="Play video"
-        className="relative flex h-16 w-16 items-center justify-center rounded-full bg-white text-[#32B0DF] shadow-lg transition duration-300 hover:scale-110"
+        className="relative cursor-pointer flex h-16 w-16 items-center justify-center rounded-full bg-white text-[#32B0DF] shadow-lg transition duration-300 hover:scale-110"
       >
         <span className="pointer-events-none absolute inset-0 animate-ping rounded-full bg-white/70"></span>
 
@@ -35,7 +35,7 @@ const VideoPing = () => {
 
       {/* Video Modal */}
       {showVideo && (
-        <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/80 px-4">
+        <div className="fixed inset-0 z-100 flex items-center justify-center bg-black/80 px-4">
 
           <div className="relative w-full max-w-3xl">
 
@@ -43,7 +43,7 @@ const VideoPing = () => {
             <button
               onClick={() => setShowVideo(false)}
               aria-label="Close video"
-              className="absolute -right-2 -top-12 flex h-10 w-10 items-center justify-center rounded-full bg-white text-black transition hover:bg-sky-400"
+              className="absolute cursor-pointer -right-2 -top-12 flex h-10 w-10 items-center justify-center rounded-full bg-white text-black transition hover:bg-sky-400"
             >
               <FiX size={22} />
             </button>

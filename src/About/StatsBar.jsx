@@ -1,4 +1,8 @@
-import { FaBullseye, FaEye } from "react-icons/fa6";
+
+import { IoEyeOutline } from "react-icons/io5";
+import { FaBullseye } from "react-icons/fa6";
+
+
 
 const stats = [
   { value: "500+", label: "Global Customers" },
@@ -16,7 +20,7 @@ const items = [
   },
   {
     title: "Our Vision",
-    icon: FaEye,
+    icon: IoEyeOutline ,
     bg: "bg-[#eef0fd] border-[#c9cdf3]",
     text: "To democratize enterprise technology by making powerful, scalable solutions accessible to organizations of all sizes. We believe that every business deserves access to world-class technology that drives growth and innovation.",
   },
@@ -46,7 +50,7 @@ export default function StatsBar() {
             className={`rounded-2xl border p-8 text-center  ${bg}`}
           >
             <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-white text-[#35b9eb] shadow-sm">
-              <Icon className="text-lg" />
+              <Icon className="text-2xl" />
             </div>
             <h3 className="mt-4 text-base font-bold text-[#0f2440]">{title}</h3>
             <p className="mx-auto mt-3 max-w-sm text-xs leading-6 text-[#434153]">{text}</p>

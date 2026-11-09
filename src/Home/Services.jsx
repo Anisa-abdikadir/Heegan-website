@@ -172,7 +172,7 @@ export default function ServiceCards() {
           <button
             onClick={handlePrevious}
             disabled={currentIndex === 0}
-            className={`flex h-9 w-9 items-center justify-center rounded-full border transition-all duration-300
+            className={`flex h-9 w-9 items-center cursor-pointer justify-center rounded-full border transition-all duration-300
               ${
                 currentIndex === 0
                   ? "cursor-not-allowed border-gray-300 text-gray-300"
@@ -187,7 +187,7 @@ export default function ServiceCards() {
           <button
             onClick={handleNext}
             disabled={currentIndex >= services.length - cardsPerPage}
-            className={`flex h-9 w-9 items-center justify-center rounded-full border transition-all duration-300
+            className={`flex h-9 w-9 items-center cursor-pointer justify-center rounded-full border transition-all duration-300
               ${
                 currentIndex >= services.length - cardsPerPage
                   ? "cursor-not-allowed border-gray-300 text-gray-300"

@@ -44,16 +44,7 @@ const ProductInfo = ({
         ))}
       </ul>
 
-      {/* Button */}
-      {/* <Link to={buttonLink} className="mt-6 inline-block">
-        <Buttons
-          variant="primary"
-          size="sm"
-          icon={<FaArrowRight className="text-xs" />}
-        >
-          {buttonText}
-        </Buttons>
-      </Link> */}
+     
 
     </div>
   );

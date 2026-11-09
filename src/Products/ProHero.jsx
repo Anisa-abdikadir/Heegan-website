@@ -9,10 +9,9 @@ const ProHero = () => {
 
 
       <AllPagesHero
-        // badge="Smart Technology for Every Industry"
-        title="Driven by Innovation. Built on Trust."
-        description="Learn more about who we are, our mission, and the vision that inspires us to create technology solutions that matter."
-        primaryText="About Us"
+        title="Powerful Products for Modern Businesses"
+  description="Whether in finance, healthcare, retail, or manufacturing, we provide customized ICT solutions that meet industry-specific needs."
+  primaryText="About US"
         primaryLink="/about"
         secondaryText="Contact Us"
         secondaryLink="/contact"

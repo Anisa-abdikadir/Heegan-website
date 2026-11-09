@@ -1,19 +1,19 @@
 // HeeganPlatforms.jsx
 import {
-  FaDesktop,
-  FaUsers,
-  FaCashRegister,
-  FaCalculator,
-  FaHeartPulse,
-  FaBoxesStacked,
-  FaHouse,
-  FaChartLine,
-  FaWallet,
-  FaCartShopping,
- 
-  FaStethoscope,
-  FaBuilding,
-} from "react-icons/fa6";
+   HiChartBar,
+  HiWallet,
+  HiShoppingCart,
+ } from "react-icons/hi2";
+import { HiOutlineComputerDesktop } from "react-icons/hi2";
+import { FiUsers } from "react-icons/fi";
+import { FiCreditCard } from "react-icons/fi";
+import { LuCalculator } from "react-icons/lu";
+import { FaRegHeart } from "react-icons/fa";
+import { GiCubeforce } from "react-icons/gi";
+
+import { FaRegBuilding } from "react-icons/fa";
+import { BsHouse } from "react-icons/bs";
+
 import businessIcon from "../assets/business.png";
 import healthIcon from "../assets/health.png";
 import propertyIcon from "../assets/property.png";
@@ -22,12 +22,12 @@ import { assets } from "../assets/assets";
 
 // Adeegyada ku dhinaca ah. side = "left" (magaca icon-ka ka dambeeya) ama "right" (magaca icon-ka ka hore)
 const services = [
-  { name: "ERP", icon: FaDesktop, side: "right", position: "right-[29%] top-[35%] sm:left-[15%] sm:top-[37%]" },
-  { name: "HR Management", icon: FaUsers, side: "left", position: "right-[1%] top-[35%] sm:right-[7%] sm:top-[37%]" },
-  { name: "POS", icon: FaCashRegister, side: "right", position: "left-[1%] top-[57%] sm:left-[16%] sm:top-[59%]" },
-  { name: "Accounting", icon: FaCalculator, side: "left", position: "right-[1%] top-[57%] sm:right-[12%] sm:top-[59%]" },
-  { name: "Healthcare", icon: FaHeartPulse, side: "right", position: "left-[7%] top-[76%] sm:left-[20%] sm:top-[75%]" },
-  { name: "Inventory", icon: FaBoxesStacked, side: "left", position: "right-[5%] top-[76%] sm:right-[20%] sm:top-[76%]" },
+  { name: "ERP", icon: HiOutlineComputerDesktop, side: "right", position: "right-[29%] top-[35%] sm:left-[15%] sm:top-[37%]" },
+  { name: "HR Management", icon: FiUsers, side: "left", position: "right-[1%] top-[35%] sm:right-[7%] sm:top-[37%]" },
+  { name: "POS", icon: FiCreditCard, side: "right", position: "left-[1%] top-[57%] sm:left-[16%] sm:top-[59%]" },
+  { name: "Accounting", icon: LuCalculator, side: "left", position: "right-[1%] top-[57%] sm:right-[12%] sm:top-[59%]" },
+  { name: "Healthcare", icon: FaRegHeart, side: "right", position: "left-[7%] top-[76%] sm:left-[20%] sm:top-[75%]" },
+  { name: "Inventory", icon: GiCubeforce, side: "left", position: "right-[5%] top-[76%] sm:right-[20%] sm:top-[76%]" },
 ];
 
 // Tiles-ka (ShapeBadge)
@@ -64,20 +64,19 @@ const tiles = [
     top: "65%",
     rotate: "-rotate-[40deg]",
   },
-  {
-    title: "eCaafi",
-    icon: FaStethoscope,
-    color: "#8bc878",
-    left: "47%",
-    top: "70%",
-    rotate: "-rotate-[-10deg]",
-  },
+ {
+  title: "eCaafi",
+  icon: FaRegHeart,
+  color: "#8bc878",
+  left: "47%",
+  top: "70%",
+  rotate: "-rotate-[-10deg]",
+},
 ];
 
 // Shape badge: qaabka organic-ka ah, icon, iyo cinwaan
 function ShapeBadge({ icon: Icon, title, bgColor, className = "" }) {
-  const isImage = typeof Icon === "string";
-
+const isImage = typeof Icon === "string";
   return (
     <div
       className={`relative flex h-full w-full flex-col items-center justify-center transition-transform duration-300 hover:scale-105 ${className}`}
@@ -113,13 +112,12 @@ function ShapeBadge({ icon: Icon, title, bgColor, className = "" }) {
 }
 // Phone-ka sare (z-40: wuxuu ka sarreeyaa wareegga)
 function PhoneMockup() {
-  const dashboardItems = [
-    ["90k", "Sales"],
-    ["53", "Orders"],
-    ["24", "Customers"],
-    ["82", "Products"],
-  ];
-  const dashboardIcons = [FaChartLine, FaWallet, FaCartShopping, FaUsers];
+  const dashboardIcons = [
+  HiChartBar,
+  HiWallet,
+  HiShoppingCart,
+FiUsers
+];
 
   return (
         <div className="absolute left-1/2 top-[8%] z-30 h-64 w-36 -translate-x-1/2 -rotate-2 sm:top-[2%] sm:h-80 sm:w-44">
@@ -183,7 +181,7 @@ export default function HeeganPlatforms() {
         {/* Wareegga dhexe (z-30: dul sar tiles-ka) */}
         <div className="absolute left-1/2 top-[47%] z-30 flex h-28.75 w-28.75 bg- -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border-[6px] border-[#d7f5fc] bg-[#32b9e8] shadow-md transition-transform duration-300 hover:scale-105 sm:h-[150px] sm:w-[150px] sm:border-[7px]">
           <div className="text-center text-white">
-            <FaBuilding className="mx-auto mb-2 text-xl sm:text-2xl" />
+            <FaRegBuilding className="mx-auto mb-2 text-xl sm:text-2xl" />
             <h2 className="text-sm font-semibold leading-tight sm:text-base">
               Heegan
               <br />
@@ -195,7 +193,7 @@ export default function HeeganPlatforms() {
         {/* Property Management: icon hoose, magaca hoos ka yaal (z-30) */}
         <div className="absolute left-1/2 top-[89%]  flex -translate-x-1/2  mt-3 -translate-y-1/2 flex-col items-center gap-1 text-[#167b92]">
           <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#1B6E84] text-white shadow-md sm:h-15 sm:w-15">
-            <FaHouse className="text-base sm:text-lg" />
+            <BsHouse  className="text-base sm:text-lg" />
           </div>
           <span className="whitespace-nowrap text-[9px] font-medium sm:text-xs">Property Management</span>
         </div>

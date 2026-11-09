@@ -58,7 +58,7 @@ const Buttons = ({
           : {}
       }
       className={`
-        inline-flex items-center justify-center gap-2
+        inline-flex items-center cursor-pointer justify-center gap-2
         rounded-full font-semibold
         transition-all duration-300 ease-in-out
         active:scale-95

@@ -43,7 +43,7 @@ function CircleButton({ className = "" }) {
   return (
     <button
       aria-label="Open project"
-      className={`flex h-10 w-10 items-center justify-center rounded-full border border-[#35b9eb] text-[#35b9eb] transition-all duration-300 group-hover:bg-[#35b9eb]  group-hover:text-white ${className}`}
+      className={`flex h-10 w-10 items-center cursor-pointer justify-center rounded-full border border-[#35b9eb] text-[#35b9eb] transition-all duration-300 group-hover:bg-[#35b9eb]  group-hover:text-white ${className}`}
     >
       <FiArrowUpRight size={18} />
     </button>
@@ -83,7 +83,7 @@ function FeaturedCard({ project }) {
           ))}
         </ul>
 
-        <CircleButton className="absolute bottom-6 border-none bg-sky-300 shadow-lg transition-all duration-300 hover:-translate-y-1 hover:border-[#35b9eb] hover:shadow-2xl hover:bg-sky-300 right-6 text-white" />
+        <CircleButton className="absolute  bottom-6 border-none bg-sky-300 shadow-lg transition-all duration-300 hover:-translate-y-1 hover:border-[#35b9eb] hover:shadow-2xl hover:bg-sky-300 right-6 text-white" />
       </div>
     </div>
   );

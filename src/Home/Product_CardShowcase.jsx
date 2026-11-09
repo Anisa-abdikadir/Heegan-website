@@ -2,17 +2,18 @@
 import React from "react";
 import { FaHardHat, FaUtensils } from "react-icons/fa";
 
+import { FiTool, FiCoffee } from "react-icons/fi";
+
 import businessIcon from "../assets/business.png";
 import healthIcon from "../assets/health.png";
 import propertyIcon from "../assets/property.png";
 import shidaalIcon from "../assets/shidaal.png";
 import SectionHeader from "../components/SectionHeader";
-
 const PRODUCTS = [
   {
     title: "eDhis Construction ERP",
     shapeTitle: "eDhis",
-    icon: FaHardHat,
+    icon: FiTool,
     color: "#F59E0B",
     description:
       "eDhis is a complete construction management system designed to help construction companies manage projects, budgets, materials, workforce, expenses, and project progress from one centralized platform.",
@@ -39,7 +40,7 @@ const PRODUCTS = [
   {
     title: "Dhadhan Restaurant ERP",
     shapeTitle: "Dhadhan",
-    icon: FaUtensils,
+    icon: FiCoffee,
     color: "#F97316",
     description:
       "Dhadhan is a complete restaurant management platform built to simplify operations with Point of Sale, inventory management, kitchen operations, customer management, accounting, and reporting.",
