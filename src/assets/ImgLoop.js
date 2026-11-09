@@ -26,7 +26,6 @@ import som_eco from '../assets/imagesLoop/som_eco.jpg'
 import sport from '../assets/imagesLoop/sport.webp'
 import sweetbridge from '../assets/imagesLoop/sweetbird.png'
 import tastotal from '../assets/imagesLoop/tastotal.webp'
-import Ultimate from '../assets/imagesLoop/Ultimate.png'
 import vilage from '../assets/imagesLoop/vilage.png'
 import wasarad from '../assets/imagesLoop/wasarada.png'
 import whistle from '../assets/imagesLoop/whist.png'
@@ -62,7 +61,6 @@ export const assets = {
     sport,
     sweetbridge,
     tastotal,
-    Ultimate,
     vilage,
     wasarad,
     whistle,
