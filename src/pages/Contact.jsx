@@ -1,6 +1,6 @@
 import React from 'react'
 import ContacHero from '../Contact/ContacHero'
-import ContactPage from '../Contact/contactPage'
+import ContactPage from '../Contact/ContactPage'
 
 const Contact = () => {
   return (
