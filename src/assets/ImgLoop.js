@@ -1,4 +1,4 @@
-import ultimate from '../assets/imagesLoop/Ultimate.png'
+import Ultimate from '../assets/imagesLoop/Ultimate.png'
 import action from '../assets/imagesLoop/action.png'
 import al_dar from '../assets/imagesLoop/al_daar.webp'
 import amak from '../assets/imagesLoop/amak.png'
@@ -26,7 +26,7 @@ import som_eco from '../assets/imagesLoop/som_eco.jpg'
 import sport from '../assets/imagesLoop/sport.webp'
 import sweetbridge from '../assets/imagesLoop/sweetbird.png'
 import tastotal from '../assets/imagesLoop/tastotal.webp'
-import Ultimate from '../assets/imagesLoop/ultimate.png'
+import Ultimate from '../assets/imagesLoop/Ultimate.png'
 import vilage from '../assets/imagesLoop/vilage.png'
 import wasarad from '../assets/imagesLoop/wasarada.png'
 import whistle from '../assets/imagesLoop/whist.png'
@@ -34,7 +34,7 @@ import whistle from '../assets/imagesLoop/whist.png'
 
 export const assets = {
    
-    ultimate,
+    Ultimate,
     action,
     al_dar,
     amak,
