@@ -1,4 +1,4 @@
-import ultimate from '../assets/imagesLoop/1.png'
+import ultimate from '../assets/imagesLoop/Ultimate.png'
 import action from '../assets/imagesLoop/action.png'
 import al_dar from '../assets/imagesLoop/al_daar.webp'
 import amak from '../assets/imagesLoop/amak.png'
